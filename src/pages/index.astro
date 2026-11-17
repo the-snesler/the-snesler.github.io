@@ -3,5 +3,192 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+<header>
+  <div class="container">
+    <a href="#" class="logo">the-snesler.github.io</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Sam Nesler</h1>
+      <p class="subtitle">
+        <!-- Add your title/role here -->
+        I'm a senior at UW-Madison that likes building software!
+      </p>
+      <p class="description">
+        <!-- Add your brief bio here -->
+        In my free time, I bike, hike, tinker with my server, and read books! :)
+      </p>
+      <div class="cta-container">
+        <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#projects" class="cta-button secondary">View my work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Add your headshot here -->
+      <div class="headshot-placeholder">
+        <!-- Replace with: <img src="your-headshot.jpg" alt="Your Name"> -->
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Learn more about my background and skills</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <!-- Add your detailed bio here -->
+        <p>I've worked for a couple cool companies, like Fetch and Brilliant! I like web design, graphics, and self-hosted systems.</p>
+        <p>Outside of programming, I'm also majoring in Data Science and Economics, and I'm the president of a club at UW-Madison called <a href="madison.dssdglobal.org">Data Science for Sustainable Development</a></p>
+
+        <!-- Add your skills here -->
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Figma</li>
+            <li>HTML/CSS</li>
+            <li>React</li>
+            <li>Svelte</li>
+            <li>Docker</li>
+            <li>GitHub</li>
+            <li>Rust</li>
+            <!-- Add more skills as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <p>A selection of my recent work</p>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <!-- Replace with actual project screenshot -->
+          <div class="image-placeholder">
+            <!-- Replace with: <img src="project1.jpg" alt="Project 1"> -->
+            <i class="fa-solid fa-image"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Aside</h3>
+          <p>A notes app that looks like Discord, built for capturing things quickly.</p>
+          <div class="project-links">
+            <a href="https://aside.tsuni.dev/" class="project-link"><i class="fa-solid fa-link"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <!-- Replace with actual project screenshot -->
+          <div class="image-placeholder">
+            <!-- Replace with: <img src="project2.jpg" alt="Project 2"> -->
+            <i class="fa-solid fa-image"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Project Title 2</h3>
+          <p>Brief description of the project, technologies used, and your role in it.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-solid fa-link"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <!-- Replace with actual project screenshot -->
+          <div class="image-placeholder">
+            <!-- Replace with: <img src="project3.jpg" alt="Project 3"> -->
+            <i class="fa-solid fa-image"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Project Title 3</h3>
+          <p>Brief description of the project, technologies used, and your role in it.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-solid fa-link"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <div class="container">
+    <div class="section-header">
+      <h2>Blog</h2>
+      <p>Thoughts, tutorials, and insights</p>
+    </div>
+    <div class="blog-grid">
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <div class="blog-date">Jan 15, 2023</div>
+        <h3>Blog Post Title 1</h3>
+        <p>Brief excerpt from the blog post that gives readers an idea of what the article is about...</p>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <div class="blog-date">Feb 28, 2023</div>
+        <h3>Blog Post Title 2</h3>
+        <p>Brief excerpt from the blog post that gives readers an idea of what the article is about...</p>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-card">
+        <div class="blog-date">Mar 10, 2023</div>
+        <h3>Blog Post Title 3</h3>
+        <p>Brief excerpt from the blog post that gives readers an idea of what the article is about...</p>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="current-year">2023</span> Your Name. All rights reserved.</p>
+    <p>Made with <i class="fa-solid fa-heart"></i> and 🧀</p>
+  </div>
+</footer>
+
+<script>
+  const yearElement = document.getElementById('current-year');
+  if (yearElement) {
+    yearElement.textContent = String(new Date().getFullYear());
+  }
+</script>
 </Layout>
